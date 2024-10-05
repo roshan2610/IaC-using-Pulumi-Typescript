@@ -6,3 +6,4 @@ import "./create-ec2-instance";
 import "./create-s3-bucket";
 import "./create-iam-user";
 import "./create-rds-instance";
+import "./outputs";

@@ -16,3 +16,6 @@ const rdsInstance = new aws.rds.Instance("antarctica-rds-deployment", {
     skipFinalSnapshot: true,
     vpcSecurityGroupIds: [rdsInstanceSGId],
 });
+
+export const rdsInstanceArn = rdsInstance.arn;
+export const rdsEndpoint = rdsInstance.endpoint;

@@ -14,3 +14,7 @@ const ec2Instance = new aws.ec2.Instance("antarctica-ec2-deployment", {
         Name: "antarctica-ec2-deployment",
     }
 });
+
+// Optionally, you can also export the instance ID and the public IP address
+export const instancePublicIp = ec2Instance.publicIp;
+export const instanceId = ec2Instance.id;
